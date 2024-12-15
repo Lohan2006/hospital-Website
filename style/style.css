@@ -1,0 +1,945 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --primary-color: #B4D4FF;
+    --primary-color-dark: #86B6F6;
+    --primary-color-light: #EEF5FF;
+    --second-color: #176B87;
+    --dark-text: #333333;
+    --white: #f7f7f7;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.logo {
+    font-size: 40px;
+    color: var(--white);
+    font-weight: 600;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    color: #32CD32;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    position: absolute; /* Keep the header at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 2rem;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Home Section with background image */
+.home-section {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/Images/1656585949912.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+/* Text styling for the home section */
+.home-items h1, .home-items h2, .home-items h3 {
+    margin: 0;
+
+}
+
+.home-items h1 {
+    font-size: 3.5vw;
+    margin-top: 3em;
+}
+
+.home-items h2 {
+    font-size: 1vw;
+    margin-bottom: 0.2em;
+}
+
+.home-items h3 {
+    font-size: 2.5vw;
+    margin-bottom: 0.5em;
+}
+
+/* Button styling */
+.home_btn {
+    padding: 12px 20px;
+    background: green;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin-bottom: 50px;
+}
+
+.home_btn:hover {
+    background: #32CD32;
+    transform: scale(1.05);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow wrapping of items if needed */
+}
+
+.txt_box, .txt_box2 {
+    width: 100%; /* Full width on smaller screens */
+    max-width: 400px; /* Limit width for larger screens */
+}
+
+ul {
+    list-style: square;
+    padding-left: 10px; /* Adjust left padding for bullets */
+}
+
+.unordered_list li, .ordered_list li {
+    margin-bottom: 10px; /* Space between the list items */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:var(--second-color); /* Update this to your primary color */
+    transition: top 0.3s ease-in-out;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px; /* Adjust padding */
+    text-decoration: none;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none; /* Remove underline */
+    padding: 10px;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    text-decoration: none; /* Keep underline removed on hover */
+    color: #32CD32; /* Optional: Change color on hover */
+}
+
+/* Hide the navbar initially */
+.navbar.hidden {
+    top: -70px; /* Adjust based on navbar height */
+}
+
+.logo {
+    font-size: 24px; /* Adjust font size */
+    font-weight: bold;
+    color: #ffffff; /* Adjust color */
+}
+
+.logo span {
+    color: #32CD32; /* Accent color */
+}
+
+.links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links li {
+    margin: 0 15px;
+
+}
+
+.links a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #eef5ff;
+}
+
+.links a:hover,
+    .links a:focus {
+        color: #32CD32;
+}
+
+.menu_btn {
+    display: none; /* Hide on larger screens */
+    cursor: pointer;
+}
+
+.about_us_txt {
+    color: green;
+    font-size: 3vw;
+    margin-top: 0.5em;
+    text-align: center; /* Center text */
+    justify-content: center;
+    margin-top: 1.5em;
+}
+
+.branches {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 50px; /* Space between grid items */
+    margin: 30px auto; /* Centered margin with auto on left and right */
+    padding: 0 20px; /* Padding on left and right */
+    text-align: center; /* Center text within each grid item */
+    justify-items: center; /* Center items horizontally within grid cells */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.branch {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text inside the branch */
+    width: 100%; /* Ensure branch takes full width of grid cell */
+    box-sizing: border-box; /* Include padding and border in element’s total width and height */
+}
+
+/* Adjustments for maps within branches */
+.branch .map {
+    width: 100%; /* Ensure maps take full width of their container */
+    height: auto; /* Adjust height to maintain aspect ratio */
+    max-width: 600px; /* Limit max width for larger maps */
+    margin: 0 auto; /* Center map horizontally */
+}
+
+/* Adjustments for text within branches */
+.branch .text {
+    width: 100%; /* Ensure text container takes full width */
+    max-width: 600px; /* Limit max width for larger text blocks */
+    margin: 0 auto; /* Center text block horizontally */
+    padding: 10px; /* Add padding for readability */
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.reasons-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.reason {
+    width: 250px;
+    margin: 20px;
+    text-align: center;
+}
+
+.reason img {
+    width: 250px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.reason h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #00bfa5;
+}
+
+.reason p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+
+
+/* Footer Styles */
+footer {
+    background-color: var(--second-color);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-logo h2 {
+    font-size: 28px;
+    color: #fff;
+  }
+  
+  .footer-logo span {
+    color: #00bfa5;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  .footer-section {
+    margin: 20px 0;
+    width: 250px;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #00bfa5;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .social-links img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .back-to-top {
+    margin-top: 20px;
+  }
+  
+  .back-to-top a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #00bfa5;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .footer-note {
+    margin-top: 20px;
+    color: #ccc;
+  }
+  
+
+
+
+
+p {
+    margin-top: 1em;
+}
+
+.branch_text {
+    margin-bottom: 1.5em;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.table {
+    width: 100%;
+    max-width: 800px; /* Limit width for better readability */
+    border-collapse: collapse;
+    margin: 30px auto;
+    align-content: center;
+}
+
+table th, table td {
+    border: 1px solid #000000;
+    padding: 12px;
+    text-align: left;
+}
+
+table th {
+    background-color: var(--primary-color-dark);
+    color: rgb(0, 0, 0);
+}
+
+table tfoot td {
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--primary-color-light);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+}
+
+/* Services Header Section */
+.services-header {
+    background-image: none;
+    color: white;
+    padding: 2em 0;
+    text-align: center;
+    justify-content: center;
+    margin-top: 5em;
+    height: auto; /* Adjust to fit content */
+    background-size: cover;
+    background-position: center;
+}
+
+.services-header h1 {
+    margin-bottom: 0.5em;
+    font-size: 3em;
+    color: #000000;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.services-header p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #000000;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Services Section */
+.services {
+    padding: 2em 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    margin-bottom: 1.5em;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 5%;
+    gap: 1.5em; /* Space between service items */
+}
+
+.service-item {
+    flex-basis: 22%; /* Flexbox basis for desktop */
+    background-color: var(--primary-color-light);
+    padding: 1.5em;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+.service-item h3 {
+    font-size: 1.4em;
+    color: var(--second-color);
+}
+/* Patient Registration Link */
+.registration-link {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.registration-link p {
+    font-size: 1.2em;
+}
+
+.registration-link a {
+    color: var(--second-color);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Doctors Page Specific Styles */
+
+/* Doctors Page Styling */
+.doctors-page {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.doctors-heading {
+    font-size: 2.5em;
+    margin-top: 60px;
+}
+
+.doctors-description {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #666;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.doctors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.doctor {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.doctor img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.doctor h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.doctor p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Hover Effects */
+.doctor:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.doctor:hover img {
+    transform: scale(1.1);
+}
+
+
+
+/* Consulting Reservation Page Specific Styles */
+.reservation-page {
+    padding: 2em 0;
+}
+
+.reservation-heading {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 1.5em;
+    color: #176B87;
+}
+
+.reservation-description {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 2em;
+    color: #444;
+}
+
+.reservation-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 1.1em;
+    color: #176B87;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #176B87;
+    color: #fff;
+    padding: 0.8em 2em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #134e5e;
+}
+
+.reservation-heading {
+    font-size: 2em;
+}
+
+.reservation-description {
+    font-size: 1em;
+}
+
+.reservation-form {
+    padding: 1.5em;
+}
+
+.submit-btn {
+    font-size: 1em;
+}
+
+/* Pharmacy Page Styles */
+.pharmacy-page {
+    padding: 2em 0;
+}
+
+.pharmacy-heading {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 1.5em;
+    color: #176B87;
+}
+
+.pharmacy-description {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 2em;
+    color: #444;
+}
+
+.pharmacy-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 1.1em;
+    color: #176B87;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #176B87;
+    color: #fff;
+    padding: 0.8em 2em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #134e5e;
+}
+
+.pharmacy-heading {
+    font-size: 2em;
+}
+
+.pharmacy-description {
+    font-size: 1em;
+}
+
+.pharmacy-form {
+    padding: 1.5em;
+}
+
+.submit-btn {
+    font-size: 1em;
+}
+
+.about_us_txt {
+    font-size: 3vw;
+    text-align: center; /* Center text */
+}
+
+.container {
+    justify-content: center; /* Center items horizontally */
+}
+
+.table {
+    width: 90%; /* Adjust table width for smaller screens */
+    align-content: center;
+}
+
+.branches {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+    justify-items: center; /* Center items within grid */
+}
+
+.services-container {
+    justify-content: center;
+}
+
+.service-item {
+    flex-basis: 45%; /* Adjust width for medium screens */
+ }
+
+.services-header h1 {
+    font-size: 2.5em;
+ }
+
+.services-header p {
+    font-size: 1.1em;
+}
+
+
+ /* FAQ Page Styles */
+ .faq-page {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 90PX;
+}
+
+.faq-heading {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-description {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+}
+
+.faq-container {
+    border-top: 1px solid #ddd;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.faq-question {
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 0;
+    padding: 10px 0;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #eee;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px 0;
+}
+
+/* Toggle answer on click */
+.faq-item:active .faq-answer,
+.faq-item:hover .faq-answer {
+    display: block;
+}
+
+
+
+
+
+@media only screen and (max-width: 850px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    .links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: green;
+        position: absolute;
+        top: 0;
+        left: -100%; /* Hide menu */
+        transition: left 0.3s ease;
+    }
+
+    .links.active {
+        left: 0; /* Show menu */
+    }
+
+    .links li {
+        margin: 30px auto;
+        font-size: 1.5rem;
+    }
+
+    .menu_btn {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 40px;
+        cursor: pointer;
+    }
+
+    .header-items {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .home_btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }   
+}
+
+/* Responsive adjustments for medium-sized screens */
+@media (max-width: 1024px) {
+    .branches {
+        margin: 20px auto; /* Centered margin for medium screens */
+        gap: 30px; /* Adjust gap between items for medium screens */
+        padding: 0 15px; /* Adjust padding for medium screens */
+    }
+    .logo{
+        display: none;
+    }
+
+    .home-items h1{
+        font-size: 6vw;
+        margin-bottom: 1em;
+    }
+
+    .home-items h2{
+        font-size: 3vw;
+    }
+
+    .home-items h3{
+        font-size: 4vw;
+    }
+}

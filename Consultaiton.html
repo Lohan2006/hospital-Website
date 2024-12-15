@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultation page</title>
+    <link rel="stylesheet" href="./style/style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon\site.webmanifest">
+    
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar" aria-label="Main Navigation">
+          <div class="logo"><a href="index.html">Life<span>Care</span></a></div>
+            <ul class="links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about us.html">About Us</a></li>
+              <li><a href="service.html">Services</a></li>
+              <li><a href="Doctors.html">Doctors</a></li>
+              <li><a href="Consultaiton.html">Reservation</a></li>
+              <li><a href="Pharmacy.html">Pharmacy</a></li>
+              <li><a href="FAQ.html">FAQ</a></li>
+            </ul>
+            <!-- Hamburger menu icon for small screens -->
+            <img src="./Images/menu-icon-6.png" alt="menu_icon" class="menu_btn">
+        </nav>
+    </header>
+
+    <section class="reservation-page">
+        <h1 class="reservation-heading">Consulting Reservation</h1>
+        <p class="reservation-description">Please fill out the form below to reserve a doctor for consultation.</p>
+        
+        <form class="reservation-form" action="#" method="post">
+            <div class="form-group">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+      
+            <div class="form-group">
+                <label for="doctor">Select Doctor:</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="" disabled selected>Select a doctor</option>
+                    <option value="dr-sarah-johnson">Dr. Sarah Johnson</option>
+                    <option value="dr-mark-adams">Dr. Mark Adams</option>
+                    <option value="dr-emily-clark">Dr. Emily Clark</option>
+                    <option value="dr-james-lee">Dr. James Lee</option>
+                </select>
+            </div>
+      
+            <div class="form-group">
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+      
+            <div class="form-group">
+                <label for="message">Additional Notes:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Enter any additional notes or requests"></textarea>
+            </div>
+      
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Reserve Now</button>
+            </div>
+        </form>
+      </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h2>Life<span>Care</span></h2>
+        </div>
+        <div class="footer-content">
+          <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p>Address: 123 Healthcare Street, City, Country</p>
+            <p>Email: <a href="mailto:info@lifecare.com">info@lifecare.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+          </div>
+    
+          <div class="footer-section quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about us.html">About Us</a></li>
+              <li><a href="service.html">Services</a></li>
+              <li><a href="Doctors.html">Doctors</a></li>
+              <li><a href="Consultaiton.html">Reservation</a></li>
+              <li><a href="Pharmacy.html">Pharmacy</a></li>
+              <li><a href="FAQ.html">FAQ</a></li>
+
+            </ul>
+          </div>
+    
+          <div class="footer-section social-media">
+            <h3>Follow Us</h3>
+            <ul class="social-links">
+              <li><a href="#"><img src="./Images/pngwing.com.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="./Images/3938028.png" alt="Twitter"></a></li>
+                <li><a href="#"><img src="./Images/Instagram_icon.png" alt="Instagram"></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="footer-note">&copy; 2024 LifeCare. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.querySelector('.menu_btn');
+        const links = document.querySelector('.links');
+        menuBtn.addEventListener('click', () => {
+            links.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
