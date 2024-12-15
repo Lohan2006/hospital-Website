@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicine Store</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+      <nav class="navbar" aria-label="Main Navigation">
+          <div class="logo"><a href="index.html">Life<span>Care</span></a></div>
+          <ul class="links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about us.html">About Us</a></li>
+              <li><a href="service.html">Services</a></li>
+              <li><a href="Doctors.html">Doctors</a></li>
+              <li><a href="Consultaiton.html">Reservation</a></li>
+              <li><a href="Pharmacy.html">Medicine</a></li>
+              <li><a href="FAQ.html">FAQ</a></li>
+              <li><a href="medicines.html">Pharmacy</a></li>
+              <li><a href="order.html">Order</a></li>
+          </ul>
+          <!-- Hamburger menu icon for small screens -->
+          <img src="./Images/menu-icon-6.png" alt="menu_icon" class="menu_btn">
+      </nav>
+  </header>
+  <main>
+    <section id="medicine-list">
+      <h2>Available Medicines</h2>
+
+      <!-- Analgesics -->
+      <div class="category">
+        <h3>Analgesics</h3>
+        <div class="medicine-grid">
+          <div class="medicine-card">
+            <img src="Images/doxycycline-capsules-100mg-1-800x800.jpg" alt="Ibuprofen">
+            <p>Ibuprofen - $70</p>
+            <button class="add-to-cart" data-name="Ibuprofen" data-price="70">Add to Cart</button>
+            <button class="add-to-favourites" data-name="Ibuprofen" data-price="70">Add to Favourites</button>
+            <button class="apply-favourites" data-name="Ibuprofen" data-price="70">Apply Favourites</button>
+          </div>
+
+          <div class="medicine-card">
+            <img src="Images/naproxen-500.jpg" alt="Aspirin">
+            <p>Aspirin - $10</p>
+            <button class="add-to-cart" data-name="Aspirin" data-price="10">Add to Cart</button>
+            <button class="add-to-favourites" data-name="Aspirin" data-price="10">Add to Favourites</button>
+            <button class="apply-favourites" data-name="Aspirin" data-price="10">Apply Favourites</button>
+          </div>
+
+          <div class="medicine-card">
+            <img src="Images/Calpol-SixPlus-Sugar-Free-Suspension-Paracetamol-Medication-6-Years-Strawberry-Flavour-80ml-1.jpg" alt="Paracetamol">
+            <p>Paracetamol - $5</p>
+            <button class="add-to-cart" data-name="Paracetamol" data-price="5">Add to Cart</button>
+            <button class="add-to-favourites" data-name="Paracetamol" data-price="5">Add to Favourites</button>
+            <button class="apply-favourites" data-name="Paracetamol" data-price="5">Apply Favourites</button>
+          </div>
+
+          <div class="medicine-card">
+            <img src="Images/ashcroft-pharmacy-naproxen-gastro-resistant-tablets-250mg-500mg-1722704384Naproxen-250-mg-Gastro-resistant-Tablets.jpg" alt="Naproxen">
+            <p>Naproxen - $25</p>
+            <button class="add-to-cart" data-name="Naproxen" data-price="25">Add to Cart</button>
+            <button class="add-to-favourites" data-name="Naproxen" data-price="25">Add to Favourites</button>
+            <button class="apply-favourites" data-name="Naproxen" data-price="25">Apply Favourites</button>
+          </div>
+
+          <div class="medicine-card">
+            <img src="Images/D1287-100GM__40104.jpg" alt="Diclofenac">
+            <p>Diclofenac - $55</p>
+            <button class="add-to-cart" data-name="Diclofenac" data-price="55">Add to Cart</button>
+            <button class="add-to-favourites" data-name="Diclofenac" data-price="55">Add to Favourites</button>
+            <button class="apply-favourites" data-name="Diclofenac" data-price="55">Apply Favourites</button>
+          </div>
+
+          <div class="medicine-card">
+            <img src="Images/hydro.jpg" alt="Ketorolac">
+            <p>Ketorolac - $90</p>
+            <button class="add-to-cart" data-name="Ketorolac" data-price="90">Add to Cart</button>
+            <button class="add-to-favourites" data-name="Ketorolac" data-price="90">Add to Favourites</button>
+            <button class="apply-favourites" data-name="Ketorolac" data-price="90">Apply Favourites</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Antibiotics -->
+      <div class="category">
+        <h3>Antibiotics</h3>
+        <div class="medicine-grid">
+          <div class="medicine-card">
+            <img src="Images/icon.jpg" alt="Fluoxetine">
+            <p>Amoxicillin - $18</p>
+            <button class="add-to-cart" data-name="Amoxicillin" data-price="18">Add to Cart</button>
+            <button class="add-to-favourites" data-name="Amoxicillin" data-price="18">Add to Favourites</button>
+            <button class="apply-favourites" data-name="Amoxicillin" data-price="18">Apply Favourites</button>
+          </div>
+
+          <div class="medicine-card">
+            <img src="Images/azithromycin (1).jpg" alt="Sertraline">
+            <p>Azithromycin - $20</p>
+            <button class="add-to-cart" data-name="Azithromycin" data-price="20">Add to Cart</button>
+            <button class="add-to-favourites" data-name="Azithromycin" data-price="20">Add to Favourites</button>
+            <button class="apply-favourites" data-name="Azithromycin" data-price="20">Apply Favourites</button>
+          </div>
+
+          <div class="medicine-card">
+            <img src="Images/doxycycline-capsules-100mg-1-800x800.jpg" alt="Paroxetine">
+            <p>Doxycycline - $35</p>
+            <button class="add-to-cart" data-name="Doxycycline" data-price="35">Add to Cart</button>
+            <button class="add-to-favourites" data-name="Doxycycline" data-price="35">Add to Favourites</button>
+            <button class="apply-favourites" data-name="Doxycycline" data-price="35">Apply Favourites</button>
+          </div>
+
+          <div class="medicine-card">
+            <img src="Images/clindamycin-phosphate-gel-1-60gm-16.jpg" alt="Citalopram">
+            <p>Cephalexin - $25</p>
+            <button class="add-to-cart" data-name="Cephalexin" data-price="25">Add to Cart</button>
+            <button class="add-to-favourites" data-name="Cephalexin" data-price="25">Add to Favourites</button>
+            <button class="apply-favourites" data-name="Cephalexin" data-price="25">Apply Favourites</button>
+          </div>
+
+          <div class="medicine-card">
+            <img src="Images/00260436-621745205583-1.jpg" alt="Mirtazapine">
+            <p>Clindamycin - $30</p>
+            <button class="add-to-cart" data-name="Clindamycin" data-price="30">Add to Cart</button>
+            <button class="add-to-favourites" data-name="Clindamycin" data-price="30">Add to Favourites</button>
+            <button class="apply-favourites" data-name="Clindamycin" data-price="30">Apply Favourites</button>
+          </div>
+
+          <div class="medicine-card">
+            <img src="Images/Ciprofloxacin-250mg-100ct.jpg" alt="Amitriptyline">
+            <p>Ciprofloxacin - $50</p>
+            <button class="add-to-cart" data-name="Ciprofloxacin" data-price="50">Add to Cart</button>
+            <button class="add-to-favourites" data-name="Ciprofloxacin" data-price="50">Add to Favourites</button>
+            <button class="apply-favourites" data-name="Ciprofloxacin" data-price="50">Apply Favourites</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- Antidepressants -->
+      <div class="category">
+        <h3>Antidepressants</h3>
+        <div class="medicine-grid">
+          <div class="medicine-card">
+            <img src="Images/Hydrochlorothiazide.jpg" alt="Fluoxetine">
+            <p>Fluoxetine - $18</p>
+            <button class="add-to-cart" data-name="Fluoxetine" data-price="18">Add to Cart</button>
+            <button class="add-to-favourites" data-name="Fluoxetine" data-price="18">Add to Favourites</button>
+            <button class="apply-favourites" data-name="Fluoxetine" data-price="18">Apply Favourites</button>
+          </div>
+
+          <div class="medicine-card">
+            <img src="Images/Sertraline_Carelink.jpg" alt="Sertraline">
+            <p>Sertraline - $20</p>
+            <button class="add-to-cart" data-name="Sertraline" data-price="20">Add to Cart</button>
+            <button class="add-to-favourites" data-name="Sertraline" data-price="20">Add to Favourites</button>
+            <button class="apply-favourites" data-name="Sertraline" data-price="20">Apply Favourites</button>
+          </div>
+
+          <div class="medicine-card">
+            <img src="Images/images.jpg" alt="Paroxetine">
+            <p>Paroxetine - $35</p>
+            <button class="add-to-cart" data-name="Paroxetine" data-price="35">Add to Cart</button>
+            <button class="add-to-favourites" data-name="Paroxetine" data-price="35">Add to Favourites</button>
+            <button class="apply-favourites" data-name="Paroxetine" data-price="35">Apply Favourites</button>
+          </div>
+
+          <div class="medicine-card">
+            <img src="Images/Ciprofloxacin-250mg-100ct.jpg" alt="Citalopram">
+            <p>Citalopram - $25</p>
+            <button class="add-to-cart" data-name="Citalopram" data-price="25">Add to Cart</button>
+            <button class="add-to-favourites" data-name="Citalopram" data-price="25">Add to Favourites</button>
+            <button class="apply-favourites" data-name="Citalopram" data-price="25">Apply Favourites</button>
+          </div>
+
+          <div class="medicine-card">
+            <img src="Images/metronidazole-500-mg-50-tablet-manufacture-may-vary-47.jpg" alt="Mirtazapine">
+            <p>Mirtazapine - $30</p>
+            <button class="add-to-cart" data-name="Mirtazapine" data-price="30">Add to Cart</button>
+            <button class="add-to-favourites" data-name="Mirtazapine" data-price="30">Add to Favourites</button>
+            <button class="apply-favourites" data-name="Mirtazapine" data-price="30">Apply Favourites</button>
+          </div>
+
+          <div class="medicine-card">
+            <img src="Images/ezgif.com-webp-to-jpg-converter-2024-06-27T132350.563.jpg" alt="Amitriptyline">
+            <p>Amitriptyline - $55</p>
+            <button class="add-to-cart" data-name="Amitriptyline" data-price="55">Add to Cart</button>
+            <button class="add-to-favourites" data-name="Amitriptyline" data-price="55">Add to Favourites</button>
+            <button class="apply-favourites" data-name="Amitriptyline" data-price="55">Apply Favourites</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Antihistamines -->
+    <div class="category">
+      <h3>Antihistamines</h3>
+      <div class="medicine-grid">
+        <div class="medicine-card">
+          <img src="Images/367457124100-diphenhydramine-50mg-10ml-w.jpg" alt="Fluoxetine">
+          <p>Diphenhydramine - $40</p>
+          <button class="add-to-cart" data-name="Diphenhydramine" data-price="40">Add to Cart</button>
+          <button class="add-to-favourites" data-name="Diphenhydramine" data-price="40">Add to Favourites</button>
+          <button class="apply-favourites" data-name="Diphenhydramine" data-price="40">Apply Favourites</button>
+        </div>
+
+        <div class="medicine-card">
+          <img src="Images/Cetirizine_Carelink.jpg" alt="Sertraline">
+          <p>Cetirizine - $25</p>
+          <button class="add-to-cart" data-name="Cetirizine" data-price="25">Add to Cart</button>
+          <button class="add-to-favourites" data-name="Cetirizine" data-price="25">Add to Favourites</button>
+          <button class="apply-favourites" data-name="Cetirizine" data-price="25">Apply Favourites</button>
+        </div>
+
+        <div class="medicine-card">
+          <img src="Images/Fexofenadine.jpg" alt="Paroxetine">
+          <p>Fexofenadine - $65</p>
+          <button class="add-to-cart" data-name="Fexofenadine" data-price="65">Add to Cart</button>
+          <button class="add-to-favourites" data-name="Fexofenadine" data-price="65">Add to Favourites</button>
+          <button class="apply-favourites" data-name="Fexofenadine" data-price="65">Apply Favourites</button>
+        </div>
+
+        <div class="medicine-card">
+          <img src="Images/Desloratadine_Carelink.jpg" alt="Citalopram">
+          <p>Desloratadine - $70</p>
+          <button class="add-to-cart" data-name="Desloratadine" data-price="70">Add to Cart</button>
+          <button class="add-to-favourites" data-name="Desloratadine" data-price="70">Add to Favourites</button>
+          <button class="apply-favourites" data-name="Desloratadine" data-price="70">Apply Favourites</button>
+        </div>
+
+        <div class="medicine-card">
+          <img src="Images/Loratadine_Carelink.lk_.jpg" alt="Mirtazapine">
+          <p>Loratadine - $30</p>
+          <button class="add-to-cart" data-name="Loratadine" data-price="30">Add to Cart</button>
+          <button class="add-to-favourites" data-name="Loratadine" data-price="30">Add to Favourites</button>
+          <button class="apply-favourites" data-name="Loratadine" data-price="30">Apply Favourites</button>
+        </div>
+
+        <div class="medicine-card">
+          <img src="Images/hydro.jpg" alt="Amitriptyline">
+          <p>Hydroxyzine - $50</p>
+          <button class="add-to-cart" data-name="Hydroxyzine" data-price="50">Add to Cart</button>
+          <button class="add-to-favourites" data-name="Hydroxyzine" data-price="50">Add to Favourites</button>
+          <button class="apply-favourites" data-name="Hydroxyzine" data-price="50">Apply Favourites</button>
+        </div>
+      </div>
+    </div>
+   </section>
+
+   <!-- Antihypertensives -->
+   <div class="category">
+    <h3>Antihypertensives</h3>
+    <div class="medicine-grid">
+      <div class="medicine-card">
+        <img src="Images/Amlodipine.jpg" alt="Fluoxetine">
+        <p>Amlodipine - $55</p>
+        <button class="add-to-cart" data-name="Amlodipine" data-price="55">Add to Cart</button>
+        <button class="add-to-favourites" data-name="Amlodipine" data-price="55">Add to Favourites</button>
+        <button class="add-to-favourites" data-name="Amlodipine" data-price="55">Add to Favourites</button>
+      </div>
+
+      <div class="medicine-card">
+        <img src="Images/Lisinopril.jpg" alt="Sertraline">
+        <p>Lisinopril - $20</p>
+        <button class="add-to-cart" data-name="Lisinopril" data-price="20">Add to Cart</button>
+        <button class="add-to-favourites" data-name="Lisinopril" data-price="20">Add to Favourites</button>
+        <button class="apply-favourites" data-name="Lisinopril" data-price="20">Apply Favourites</button>
+      </div>
+
+      <div class="medicine-card">
+        <img src="Images/Losartan.jpg" alt="Paroxetine">
+        <p>Losartan - $35</p>
+        <button class="add-to-cart" data-name="Losartan" data-price="35">Add to Cart</button>
+        <button class="add-to-favourites" data-name="Losartan" data-price="35">Add to Favourites</button>
+        <button class="apply-favourites" data-name="Losartan" data-price="35">Apply Favourites</button>
+      </div>
+
+      <div class="medicine-card">
+        <img src="Images/metronidazole-500-mg-50-tablet-manufacture-may-vary-47.jpg" alt="Citalopram">
+        <p>Metoprolol - $40</p>
+        <button class="add-to-cart" data-name="Metoprolol" data-price="40">Add to Cart</button>
+        <button class="add-to-favourites" data-name="Metoprolol" data-price="40">Add to Favourites</button>
+        <button class="apply-favourites" data-name="Metoprolol" data-price="40">Apply Favourites</button>
+      </div>
+
+      <div class="medicine-card">
+        <img src="Images/Hydrochlorothiazide.jpg" alt="Mirtazapine">
+        <p>Hydralazine - $75</p>
+        <button class="add-to-cart" data-name="Hydralazine" data-price="75">Add to Cart</button>
+        <button class="add-to-favourites" data-name="Hydralazine" data-price="75">Add to Favourites</button>
+        <button class="apply-favourites" data-name="Hydralazine" data-price="75">Apply Favourites</button>
+      </div>
+
+      <div class="medicine-card">
+        <img src="Images/Enalapril.jpg" alt="Amitriptyline">
+        <p>Enalapril - $50</p>
+        <button class="add-to-cart" data-name="Enalapril" data-price="50">Add to Cart</button>
+        <button class="add-to-favourites" data-name="Enalapril" data-price="50">Add to Favourites</button>
+        <button class="apply-favourites" data-name="Enalapril" data-price="50">Apply Favourites</button>
+        
+
+       </div>
+      </div>
+     </div>
+   </section>
+
+<h2>Favourites</h2>
+   <table id="orderTable">
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Favourites order details will be inserted here -->
+    </tbody>
+  </table>
+
+
+  </main>
+  <table id="cart-table">
+    <thead>
+      <h2>Shopping Cart</h2><br><br>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Cart items will appear here -->
+    </tbody>
+  </table>
+  <h3>Total Price: $<span id="total-price">0.00</span></h3>
+  <button id="checkout">Checkout</button>
+
+  <script src="scripts/script.js"></script>
+
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h2>Life<span>Care</span></h2>
+      </div>
+      <div class="footer-content">
+        <div class="footer-section contact">
+          <h3>Contact Us</h3>
+          <p>Address: 123 Healthcare Street, City, Country</p>
+          <p>Email: <a href="mailto:info@lifecare.com">info@lifecare.com</a></p>
+          <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+        </div>
+  
+        <div class="footer-section quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="Doctors.html">Doctors</a></li>
+            <li><a href="Consultaiton.html">Reservation</a></li>
+            <li><a href="Pharmacy.html">Pharmacy</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+
+          </ul>
+        </div>
+  
+        <div class="footer-section social-media">
+          <h3>Follow Us</h3>
+          <ul class="social-links">
+            <li><a href="#"><img src="./Images/pngwing.com.png" alt="Facebook"></a></li>
+            <li><a href="#"><img src="./Images/3938028.png" alt="Twitter"></a></li>
+            <li><a href="#"><img src="./Images/Instagram_icon.png" alt="Instagram"></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="footer-note">&copy; 2024 LifeCare. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+
